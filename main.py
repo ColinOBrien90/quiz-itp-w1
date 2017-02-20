@@ -22,7 +22,7 @@ def question_2():
 
     What's the final result of the following operation:
 
-    user = True or ("" and False and []) or (1 and "hello world")
+    result = True or ("" and False and []) or (1 and "hello world")
 
     a) []
     b) 1

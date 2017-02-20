@@ -24,7 +24,7 @@ d) Collection
 What's the final result of the following operation:
 
 ```python
-user = True or ("" and False and []) or (1 and "hello world")
+result = True or ("" and False and []) or (1 and "hello world")
 ```
 
 ##### Options:
