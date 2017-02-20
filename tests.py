@@ -16,7 +16,7 @@ https://medium.com/rmotr-com/those-tricky-python-booleans-2100d5df92c#.hiwfwzcrg
         msg = """The `or` operation will return the *FIRST* truthy value.
         That's the first True in the expression.
         """
-        self.assertEqual(main.question_1(), True, msg)
+        self.assertEqual(main.question_2(), True, msg)
 
     def test_question_3(self):
         """Question 3."""
