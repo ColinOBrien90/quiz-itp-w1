@@ -5,7 +5,7 @@
 def question_1():
     """Return the correct answer for the following question.
 
-    What's the correct data type of the following values: `True`, `False`
+    What's the correct data type of the following values: True, False
 
     a) Integer
     b) Boolean
