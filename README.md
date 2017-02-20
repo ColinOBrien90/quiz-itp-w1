@@ -32,7 +32,8 @@ result = True or ("" and False and []) or (1 and "hello world")
 a) []
 b) 1
 c) True
-d) "hello world"
+d) False
+e) "hello world"
 ```
 
 #### Question 3

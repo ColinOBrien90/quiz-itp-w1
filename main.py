@@ -27,7 +27,8 @@ def question_2():
     a) []
     b) 1
     c) True
-    d) "hello world"
+    d) False
+    e) "hello world"
     """
     # Return the correct value.
     pass
