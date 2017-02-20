@@ -100,10 +100,14 @@ def calculate_tax(income):
     calculate_tax(income)  # $210,000 * 0.35 = 73500 = $73,500
     """
     # Write your code here
-    swapped = {}
-    for k, v in a_dict.items():
-        swapped[v] = k
-    return swapped
+    if income <= 50000:
+        return income * 0.15
+    elif income <= 75000:
+        return income * 0.25
+    elif income <= 100000:
+        return income * 0.30
+    else:
+        return income * 0.35
 
 
 # Question 6
