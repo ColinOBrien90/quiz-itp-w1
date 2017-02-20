@@ -94,7 +94,7 @@ def swap_keys_and_values(a_dict):
 
 
 # Question 6
-def matrix_sum(a_dict):
+def matrix_sum(a_matrix):
     """Implement the code required to make this function work.
 
     Write a function `matrix_sum` that sums all the values in a square matrix.
