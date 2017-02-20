@@ -5,7 +5,7 @@
 def question_1():
     """Return the correct answer for the following question.
 
-    What's the correct data type of the following values: `True`, `False`
+    What's the correct data type of the following values: True, False
 
     a) Integer
     b) Boolean
@@ -22,12 +22,13 @@ def question_2():
 
     What's the final result of the following operation:
 
-    user = True or ("" and False and []) or (1 and "hello world")
+    result = True or ("" and False and []) or (1 and "hello world")
 
     a) []
     b) 1
     c) True
-    d) "hello world"
+    d) False
+    e) "hello world"
     """
     # Return the correct value.
     return True
@@ -72,28 +73,31 @@ def question_4():
 
 
 # Question 5
-def swap_keys_and_values(a_dict):
+def calculate_tax(income):
     """Implement the code required to make this function work.
 
-    Write a function `swap_keys_and_values` that receives a dictionary
-    and returns a new dictionary with the keys and values swapped.
-    **Important!** Do not modify the original one.
+    Write a function `calculate_tax` that receives a number (`income`) and
+    calculates how much of Federal taxes is due,
+    according to the following table:
+
+
+    | Income  | Tax Percentage |
+    | ------------- | ------------- |
+    | <= $50,000    |        15%    |
+    | <= $75,000    |        25%    |
+    | <= $100,000   |        30%    |
+    | > $100,000    |        35%    |
 
     Example:
 
-    prices = {
-      'apples': 1.89,
-      'oranges': 1.17,
-      'peaches': 2.21
-    }
+    income = 30000  # $30,000 is less than $50,000
+    calculate_tax(income)  # $30,000 * 0.15  = 4500 = $4,500
 
-    swapped = swap_keys_and_values(prices)
-    print(swapped)
-    {
-      1.89: 'apples',
-      1.17: 'oranges',
-      2.21: 'peaches'
-    }
+    income = 80000  # $80,000 is more than $75,000 but less than $80,000
+    calculate_tax(income)  # $80,000 * 0.25 = 20000 = $20,000
+
+    income = 210000  # $210,000 is more than $100,000
+    calculate_tax(income)  # $210,000 * 0.35 = 73500 = $73,500
     """
     # Write your code here
     swapped = {}

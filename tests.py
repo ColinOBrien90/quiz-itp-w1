@@ -37,26 +37,11 @@ https://medium.com/rmotr-com/those-tricky-python-booleans-2100d5df92c#.hiwfwzcrg
 
     def test_question_5(self):
         """Question 5."""
-        prices = {
-            'apples': 1.89,
-            'oranges': 1.17,
-            'peaches': 2.21
-        }
-
-        self.assertEqual(main.swap_keys_and_values(prices), {
-            1.89: 'apples',
-            1.17: 'oranges',
-            2.21: 'peaches'
-        })
-
-        cars = {
-            'ford': 'red',
-            'chevy': 'blue'
-        }
-        self.assertEqual(main.swap_keys_and_values(cars), {
-            'blue': 'chevy',
-            'red': 'ford'
-        })
+        self.assertEqual(main.calculate_tax(0), 0)
+        self.assertEqual(main.calculate_tax(40000), 6000.0)
+        self.assertEqual(main.calculate_tax(63500), 15875.0)
+        self.assertEqual(main.calculate_tax(82100), 24630.0)
+        self.assertEqual(main.calculate_tax(250000), 87500.0)
 
     def test_question_6(self):
         """Question 6."""
