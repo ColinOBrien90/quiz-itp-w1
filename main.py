@@ -46,9 +46,9 @@ def remove_Es(a_string):
     """
     b_string = ''
     for i in a_string:
-        if not 'e' or 'E':
-            i += b_string
-            return b_string
+        if i != 'e' and i != 'E':
+            b_string += i
+    return b_string
     
 
 
@@ -65,7 +65,7 @@ def question_4():
 
     result = a_list[3**2 - 8] + a_list[-1] + a_tuple[2]
     """
-    return [1, 2, 3, 4, 5, 6, 7, 8, 8, 9,`9, 33, 12]
+    return 22
 
 
 # Question 5
@@ -130,5 +130,8 @@ def matrix_sum(a_matrix):
     matrix_sum(m1)  #  80
     matrix_sum(m2)  # 198
     """
-    sum a_matrix[]
-    return sum
+    result = 0
+    for row in a_matrix:
+        for col in row:
+            result += col
+        return result
